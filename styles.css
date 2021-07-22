@@ -8,7 +8,6 @@ body {
 .dual-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 70vw;
     margin: auto;
     padding: 30px;
 }

@@ -98,7 +98,7 @@ const controlTime = () => {
 				});
 				nextDate += second;
 			}
-		}, 30);
+		}, 1000);
 		localStorage.clear();
 		localStorage.setItem('interval-id', interval);
 	}
