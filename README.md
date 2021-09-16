@@ -18,3 +18,8 @@ A timer that sets a session block and a break block of time. Users can set a ses
 App deployed on Netlify
 
 https://musing-pike-0a3d02.netlify.app/
+
+## Credits
+
+- The fifth and final project requirement for freeCodeCamp's Frontend Development Libraries Certification. You can view that part of the curriculum here: https://www.freecodecamp.org/learn/front-end-development-libraries/
+- The CodePen that I took inspiration from: https://codepen.io/freeCodeCamp/full/XpKrrW
