@@ -33,34 +33,23 @@ const formatTime = (time, option) => {
 const changeTime = (amount, type) => {
 	switch (type) {
 		case 'break':
-			if (breakTime <= 60 && amount < 0) {
-				break;
-			} else if (breakTime >= 60 * 60 && amount > 0) {
+			if (breakTime <= 60 && amount < 0 || breakTime >= 60 * 60 && amount > 0) {
 				break;
 			}
 			setBreakTime((t) => t + amount);
-			switch (!timerOn && onBreak) {
-				case true:
+				if (!timerOn && onBreak) {
 					setDisplayTime(breakTime + amount);
-					break;
-				default:
-					break;
-			}
+				}
 			break;
 		case 'session':
-			if (sessionTime <= 60 && amount < 0) {
-				break;
-			} else if (sessionTime >= 60 * 60 && amount > 0) {
+			if (sessionTime <= 60 && amount < 0 || sessionTime >= 60 * 60 && amount > 0) {
 				break;
 			}
 			setSessionTime((t) => t + amount);
-			switch (!timerOn && !onBreak) {
-				case true:
+				if (!timerOn && !onBreak) {
 					setDisplayTime(sessionTime + amount);
 					break;
-				default:
-					break;
-			}
+				}
 			break;
 		default:
 			break;
